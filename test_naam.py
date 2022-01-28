@@ -10,7 +10,7 @@ def test_init_achternaam():
     assert n.voornaam == ''
     assert n.achternaam == 'Dijkstra'
 
-def test_init_achternaam():
+def test_init_voornaam():
     n = Naam('Dijkstra', 'Tsjibbe')
     assert n.voornaam == 'Tsjibbe'
     assert n.achternaam == 'Dijkstra'
