@@ -1,9 +1,9 @@
-from naam import Naam
+import pytest
+from naam import Naam, NaamError
 
-def test_init_empty():
-    n = Naam()
-    assert n.voornaam == ''
-    assert n.achternaam == ''
+def test_init_empty():    
+    with pytest.raises(NaamError):
+        n = Naam()
 
 def test_init_achternaam():
     n = Naam('Dijkstra')
